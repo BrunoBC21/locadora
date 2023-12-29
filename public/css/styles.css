@@ -1,0 +1,151 @@
+body {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 20px 0 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 60%; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-left: 20%; /* Adiciona margem à esquerda */
+    margin-right: 20%; /* Adiciona margem à direita */
+    background: #eeeff0;
+    padding: 10px;
+}
+
+.header {
+    background-image: url('/img/carro5.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+nav {
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    
+}
+
+nav ul li {
+    display: inline-block; 
+    margin-right: 15px;
+}
+
+.section {
+    padding: 10px;
+    margin: 5px 0; /* Ajusta a margem vertical conforme necessário */
+    background-color: #f8f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 1px;
+    color: #343d41;
+    width: 100%;
+}
+#home, #cadastrar-veiculo, #agendamentos, #cancelados, #logout{
+    display: inline-block;
+    margin-right: 20px;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-weight: 645;
+    border-radius: 5px;
+}
+#home:hover, #cadastrar-veiculo:hover, #agendamentos:hover, #cancelados:hover, #logout:hover {
+    color: #2993b3;
+}
+
+.custom-btn {
+    background-color: #2993b3;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    Border: none
+    
+}
+.msg {
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.conta {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.error {
+    background-color: #f3b9b9;
+    color: #7e5555;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+#calendar-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: left;
+}
+
+.calendar-row {
+    display: flex;
+    gap: 5px;
+    justify-content: left;
+}
+
+.calendar-day {
+    width: 60px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.day-week {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.day-number {
+    font-size: 18px;
+}
+
+.calendar-day.selected {
+    background-color: #2993b3;
+    color: #fff;
+}
+
+.calendar-day.unavailable {
+    background-color: #ccc;
+    color: black;
+    cursor: not-allowed;
+}
+.custom-btn {
+    background-color: #2993b3;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    Border: none
+}
