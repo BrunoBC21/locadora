@@ -38,7 +38,11 @@
                                     
                                 <h5 class="card-title">{{ $dados->veiculo->marca }} - {{ $dados->veiculo->modelo }}</h5>
                                 <p class="card-text">
-                                    <strong>Cliente:</strong> {{ $dados->user->name }}<br>
+                                    @auth
+                                        @if(auth()->user()->role === 'admin')
+                                            <strong>Cliente:</strong> {{ $dados->user->name }}<br>
+                                        @endif
+                                    @endauth
                                     <strong>Valor:</strong> {{ $dados->veiculo->preco }}<br>
                                     <strong>Método de Pagamento:</strong> {{ $dados->pagamento}}<br>
                                     <strong>Data:</strong> {{ $dados->data }}

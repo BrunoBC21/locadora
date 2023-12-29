@@ -19,7 +19,6 @@ class CreateCancelarsTable extends Migration
             $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->date('data');
             $table->string('pagamento');
-            $table->float('valor');
             $table->timestamps();
         });
     }

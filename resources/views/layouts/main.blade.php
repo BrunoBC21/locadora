@@ -34,7 +34,16 @@
                     </li>
 
                     <li>
-                        <a id="agendamentos" href="/meus-agendamentos">Agendados</a>
+                        @auth
+                            @if(auth()->user()->role === 'admin')
+                                <a id="agendamentos" href="/meus-agendamentos">Agendados</a>
+                            @endif
+                        @endauth
+                        @auth
+                            @if(auth()->user()->role === 'user')
+                                <a id="agendamentos" href="/meus-agendamentos">Meus  Agendamentos</a>
+                            @endif
+                        @endauth
                     </li>
 
                     <li>

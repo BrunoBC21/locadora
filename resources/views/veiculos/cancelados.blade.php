@@ -16,7 +16,7 @@
 
     <div class="container conta">
         <section id="veiculos-cadastrados" class="section">
-            
+        <h5 style="margin-left: 30%;">Agendamentos Cancelados:</h5>
             @foreach($agendamentoCancelados as $dados)
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
